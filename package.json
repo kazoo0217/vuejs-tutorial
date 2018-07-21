@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.4.4"
+    "vue": "^2.5.16"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.24.6",
     "gulp": "^3.9.1"
   }
 }
