@@ -1,5 +1,5 @@
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
+const gulp        = require('gulp');
+const browserSync = require('browser-sync').create();
 
 // Static server
 gulp.task('browser-sync', function() {
@@ -12,4 +12,4 @@ gulp.task('browser-sync', function() {
   gulp.watch("./js/example.js").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['browser-sync']);
+gulp.task('default', gulp.parallel('browser-sync'));
